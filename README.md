@@ -1,2 +1,2 @@
 # my-diarium-backend
-My Diarium is something like a journal where where users make a record of their daily activities which we then refer to as memories
+My Diarium is something like a journal where users make a record of their daily activities which we then refer to as memories
