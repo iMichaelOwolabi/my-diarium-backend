@@ -1,0 +1,19 @@
+{
+  "name": "my-diarium-backend",
+  "version": "1.0.0",
+  "description": "My Diarium is something like a journal where users make a record of their daily activities which we then refer to as memories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMichaelOwolabi/my-diarium-backend.git"
+  },
+  "author": "Michael Owolabi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iMichaelOwolabi/my-diarium-backend/issues"
+  },
+  "homepage": "https://github.com/iMichaelOwolabi/my-diarium-backend#readme"
+}
