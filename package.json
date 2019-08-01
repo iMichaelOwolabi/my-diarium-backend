@@ -2,9 +2,13 @@
   "name": "my-diarium-backend",
   "version": "1.0.0",
   "description": "My Diarium is something like a journal where users make a record of their daily activities which we then refer to as memories",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel-node src -d lib",
+    "serve": "node lib/app.js",
+    "start": "npm run build && npm run serve",
+    "dev": "nodemon --exec babel-node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,18 @@
   "bugs": {
     "url": "https://github.com/iMichaelOwolabi/my-diarium-backend/issues"
   },
-  "homepage": "https://github.com/iMichaelOwolabi/my-diarium-backend#readme"
+  "homepage": "https://github.com/iMichaelOwolabi/my-diarium-backend#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
 }
