@@ -4,7 +4,7 @@
   "description": "My Diarium is something like a journal where users make a record of their daily activities which we then refer to as memories",
   "main": "src/app.js",
   "scripts": {
-    "test": "mocha test/*.js --require @babel/register",
+    "test": "mocha test/*.js --require @babel/register --exit",
     "build": "babel-node src -d lib",
     "serve": "node lib/app.js",
     "start": "npm run build && npm run serve",
