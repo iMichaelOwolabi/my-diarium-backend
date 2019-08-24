@@ -3,15 +3,16 @@ import chaiHttp from 'chai-http';
 import app from '../src/app';
 
 chai.use(chaiHttp);
-const { expect } = chai;
+const { expect, request } = chai;
 
-describe('app base route /', () => {
+describe('app base route /graphql', () => {
   it('should test the base / route to confirm connection', () => {
-    chai.request(app)
-      .get('/')
+    request(app)
+      .post('/graphql')
+      .send({ query: '{welcome}'})
       .end((err, res) => {
-        expect(res).to.have.status(200);
-        if (err) return done(err);
+        expect(200)
+        if (err) return err;
       });
   });
 });
