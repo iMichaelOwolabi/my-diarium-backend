@@ -3,10 +3,12 @@ jobs:
   build:
     docker:
       - image: circleci/node:carbon
+      - image: circleci/postgres:9.6.5-alpine-ram
 
     steps:
       - checkout
       - run: npm install
+      - run: sudo apt-get install postgresql-client-9.6
       - run:
           name: "Run Test and Collect Coverage Reports"
           command: npm run coverage
