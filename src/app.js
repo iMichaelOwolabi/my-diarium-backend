@@ -1,8 +1,8 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
-import { typeDefs, resolvers } from '../src/schema/schema';
+import { typeDefs, resolvers } from './schema/schema';
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({ typeDefs, resolvers, introspection: true,  playground: true, });
 
 const app = express();
 server.applyMiddleware({ app });
