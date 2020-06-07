@@ -43,7 +43,7 @@
     "sequelize-test-helpers": "^1.1.2"
   },
   "dependencies": {
-    "apollo-server-express": "^2.8.2",
+    "apollo-server-express": "^2.14.2",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "graphql": "^14.4.2",
